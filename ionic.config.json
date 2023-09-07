@@ -1,0 +1,7 @@
+{
+  "name": "uberfruna",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
