@@ -2,9 +2,19 @@ ion-toolbar{
     background-color: var(--ion-color-cortesito);
 }
 
-.btn{
-    background-color: var(--ion-color-cortesito-shade);
-    color:white;
-    padding: 20px 30px 20px 30px;
-    font-size: 20px;
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Usamos el 100vh para ocupar toda la altura de la ventana */
+  }
+  
+  .btn {
+    width: 200px; /* Ancho deseado */
+    height: 80px; /* Altura deseada */
+    font-size: 24px; /* Tamaño de fuente deseado */
+    margin: 10px auto; /* Espacio entre los botones y centrado horizontalmente */
+    margin-top: 90px; /* Ajusta el margen superior según la distancia que desees */
+    margin-left: 50px; /* Ajusta el margen izquierdo para mover los botones hacia la derecha */
 }

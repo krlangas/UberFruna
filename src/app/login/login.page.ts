@@ -10,12 +10,17 @@ import { HelperService } from 'src/app/services/helper.service';
 export class LoginPage implements OnInit {
   email: string = '';
   contrasena: string = '';
-
+  hideMenu: boolean=false;
   constructor(
     private router: Router,
     private helperService:HelperService) {}
 
   ngOnInit() {
+    const curretRoute=this.router.url;//obtener ruta
+    //verificar la ruta de inicio de sesion
+    if(curretRoute ==='/login'){
+      this.hideMenu=true;
+    }
   }
 
   login() {
@@ -37,5 +42,6 @@ export class LoginPage implements OnInit {
       this.helperService.showAlert("El email o el correo son incorrectos","Error");
       //alert('Crdeneciales no validas.');
     }
+    
   }
 }

@@ -1,13 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>disponibilidad</ion-title>
+    <ion-title>formulario</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">disponibilidad</ion-title>
+      <ion-title size="large">formulario</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-item>
+    <ion-label position="floating">Patente</ion-label>
+    <ion-input type="text" [(ngModel)]="patente"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Destino</ion-label>
+    <ion-input type="text" [(ngModel)]="destino"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Cantidad de Pasajeros</ion-label>
+    <ion-input type="number" [(ngModel)]="Cpasajeros"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Conductor</ion-label>
+    <ion-input type="text" [(ngModel)]="conductor"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Costo</ion-label>
+    <ion-input type="number" [(ngModel)]="costo"></ion-input>
+  </ion-item>
+
 </ion-content>

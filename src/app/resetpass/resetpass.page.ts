@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resetpass.page.scss'],
 })
 export class ResetpassPage implements OnInit {
+  correo:string='';
 
   constructor() { }
 

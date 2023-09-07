@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./disponibilidad.page.scss'],
 })
 export class DisponibilidadPage implements OnInit {
+  patente:string='';
+  destino:string='';
+  Cpasajeros:string='';
+  conductor:string='';
+  costo:number=0;
 
   constructor() { }
 
